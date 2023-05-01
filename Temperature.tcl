@@ -7,14 +7,14 @@ switch $ch {
 	puts "Enter temperature in Fahrenheit"
 	gets stdin fdegree
 	set cdegree [expr ($fdegree -32.0) * 5/9]
-	puts "In Celcius, the degree is $cdegee degrees"
+	puts "In Celcius, the degree is $cdegree degrees"
 }
 
 "2" {
 	puts "Enter temperature in Celcius"
 	gets stdin cdegree
 	set fdegree [expr ($cdegree *9 / 5)+ 32.0]
-	puts "In Fahrenheit, the degree is $fdegee degrees"
+	puts "In Fahrenheit, the degree is $fdegree degrees"
 }
 
 default {
